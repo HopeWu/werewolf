@@ -1,0 +1,11 @@
+p{font-size:1rem;line-height:1.5em; letter-spacing:1px;}
+label, input{font-size:1.25rem;}
+article{margin-bottom:2rem;}
+div.land{ margin-top:1rem;}
+div.land,div.contribution{font-size:1.25rem;}
+input{padding:5px 8px; border-radius: 5px;}
+button{height:100%; width:5em;border-radius:5px;color: white; border:5px;padding:5px 8px; font-size:0.75rem; background-color:#1d64de; box-shadow: 2px 2px 5px black;}
+button:hover{background-color: #3b81f7;}
+input.discount{width:7.5em; margin-bottom:1em;}
+i#in-addition{font-size:0.8em;}
+main{margin-left:20px;}

@@ -14,9 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    #return view('welcome');
-    return view('home');
+    return view('index');
 });
+Route::get('/color', function () {
+    return view('colorful');
+});
+Route::get('/zg', function () {
+    return view('contribution');
+});
+Route::post('/cook', 'App\Http\Controllers\OrderCookController@cook');
+Route::post('/', 'App\Http\Controllers\OrderCookController@cook');
+Route::post('/format', 'App\Http\Controllers\OrderCookController@format');
+Route::post('/zg', 'App\Http\Controllers\ContributionController@calculate');
+
 
 Route::get('/game/create', 'App\Http\Controllers\GameController@create');
 
@@ -35,7 +45,3 @@ Route::post('/game/shuffle-cards', 'App\Http\Controllers\PlayGameController@shuf
 Route::get('/role', 'App\Http\Controllers\PlayGameController@showRole');
 
 Route::get('/dashboard/{game}', 'App\Http\Controllers\HostController@dashboard');
-
-
-
-Auth::routes();
