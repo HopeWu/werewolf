@@ -5,7 +5,7 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            display: grid;
+            display:  grid;
             grid-template-rows: repeat(10, 1fr);
             grid-template-columns: repeat(10, 1fr);
             ">
